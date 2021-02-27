@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JUST A SIMPLE WEBSITE</title>
+		<meta name="description" content="Scroll animations for image grids powered by Locomotive Scroll">
+		<meta name="keywords" content="locomotive scroll, scroll animation, website, javascript, demo">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="/favicon.26242483.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/rmd7deq.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+		<link rel="stylesheet" href="/master.e2f719f2.css">
+		<link rel="stylesheet" href="/cursor.31f8ab1e.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>document.documentElement.className = "js";
+
+var supportsCssVars = function supportsCssVars() {
+  var e,
+      t = document.createElement("style");
+  return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<script src="/base.98fd6c19.js"></script><script src="/master.e2f719f2.js"></script><script src="/cursor.31f8ab1e.js"></script></head>
+	<body class="demo-1 loading">
+		<div class="cursor">
+			<div class="arc_reactor">
+				<div class="case_container">
+					<div class="e7">
+					<div class="semi_arc_3 e5_1">
+						<div class="semi_arc_3 e5_2">
+						<div class="semi_arc_3 e5_3">
+							<div class="semi_arc_3 e5_4">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="core2"></div>
+					</div>
+					<ul class="marks">
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+						<li></li><li></li><li></li><li></li><li></li><li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="overlay">
+				<p class="screen">COOLIO</p>
+				<div class="intro">
+					<button id="mainButton" class="myBtn" onclick="fadeOut()">VOLUME UP</button>
+				</div>
+			</div>
+	
+			<div class="overlay-2"></div>
+			<video loop="" id="myVideo">
+				<source src="/legends.3fe2ccfa.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+
+			<!-- <iframe autoplay="true" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0&controls=0&loop=1"></iframe> -->
+			
+			<div class="vdo-content">
+				<button id="vdo-control" onclick="myFunction()">Pause</button>
+			</div>
+			<main data-scroll-container="">
+				<section id="header" class="content content--numbered">
+					<p class="content__pretitle">CREATIVE STUDIOS</p>
+					<!-- <p class="content__breakout bar-yellow" data-scroll data-scroll-speed="+10" data-scroll-direction="horizontal"></p>
+					<span class="c-header_title_line">
+						<h1 class="content__title" data-scroll data-scroll-delay="0.06" data-scroll-speed="2" data-scroll-call="dynamicColor">WE CREATE CRAZY SHIT</h1>
+					</span>
+					<p class="content__breakout bar-red" data-scroll data-scroll-delay="0.06" data-scroll-speed="-10" data-scroll-direction="horizontal"></p> -->
+					<div class="c-header_title_line c-lerp-block">
+						<span class="c-lerp-block_title content__title intro-font text-fancy" data-scroll="">
+							<span data-scroll="" data-scroll-delay="0.12" data-scroll-speed="6">W</span>
+							<span data-scroll="" data-scroll-delay="0.12" data-scroll-speed="6">H</span>
+							<span data-scroll="" data-scroll-delay="0.11" data-scroll-speed="6">A </span>
+							<span data-scroll="" data-scroll-delay="0.11" data-scroll-speed="6">T</span>
+							<span data-scroll="" data-scroll-delay="0.10" data-scroll-speed="6"></span>
+							<span data-scroll="" data-scroll-delay="0.10" data-scroll-speed="6">E</span>
+							<span data-scroll="" data-scroll-delay="0.09" data-scroll-speed="6">V</span>
+							<span data-scroll="" data-scroll-delay="0.09" data-scroll-speed="6">E</span>
+							<span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="6">R</span>
+							<span data-scroll="" data-scroll-delay="0.08" data-scroll-speed="6"> </span>
+							<span data-scroll="" data-scroll-delay="0.07" data-scroll-speed="6">I</span>
+							<span data-scroll="" data-scroll-delay="0.07" data-scroll-speed="6">T</span>
+							<span data-scroll="" data-scroll-delay="0.06" data-scroll-speed="6"></span>
+							<span data-scroll="" data-scroll-delay="0.06" data-scroll-speed="6">T</span>
+							<span data-scroll="" data-scroll-delay="0.05" data-scroll-speed="6">A</span>
+							<span data-scroll="" data-scroll-delay="0.05" data-scroll-speed="6">K</span>
+							<span data-scroll="" data-scroll-delay="0.04" data-scroll-speed="6">E</span>
+							<span data-scroll="" data-scroll-delay="0.04" data-scroll-speed="6">S</span>
+						</span>
+					</div>
+				</section>
+				<section class="content background-black content--numbered" style="background-image:url(/backgrounds.76aed134.png);background-size: 100% 100%;">
+					<p class="content__pretitle-noMarg">ABOUT US</p>
+					<p class="content__text description-family text-fancy" data-scroll="" data-scroll-speed="4">
+						We are developers, digital illustrators, and UI/UX designers. We are a bunch of creative people who transform the simple, boring and ugly in to a modern and classy applications. 
+						And we train people who wants to be creative in this boring world. <br></p>
+					<p class="content__text description-family text-fancy" data-scroll="" data-scroll-speed="10">
+						creating art, code, pop culture studies, and weird projects for this perfect and always evolving medium: the web.
+					</p>
+					<p class="content__text description-family text-fancy p-float--right p-font--big" data-scroll="" data-scroll-speed="4">
+						We solve consumer and business problems with our diversified services keeping a balanced ecosystem across the brand.
+					</p>
+				</section>
+				<section class="content background-grains content--numbered">
+					<p class="content__pretitle-noMarg">SERVICES</p>
+					<main>
+						<nav class="menu">
+							<div class="menu__item">
+								<a class="menu__item-link">TRAINING</a>
+								<img class="menu__item-img" src="/1.e7864b95.jpg" alt="Some image">
+								<div class="marquee">
+									<div class="marquee__inner" aria-hidden="true">
+										<span>Web devloper</span>
+										<span>training</span>
+										<span>from basic</span>
+										<span>to pro</span>
+									</div>
+								</div>
+							</div>
+							<div class="menu__item">
+								<a class="menu__item-link">BLA BLA BLA</a>
+								<img class="menu__item-img" src="/2.dd89043e.jpg" alt="Some image">
+								<div class="marquee">
+									<div class="marquee__inner" aria-hidden="true">
+										<span>BLA</span>
+										<span>BLA BLA</span>
+										<span>BLA BLA</span>
+										<span>BLA BLA</span>
+									</div>
+								</div>
+							</div>
+							<div class="menu__item">
+								<a class="menu__item-link">BLA</a>
+								<img class="menu__item-img" src="/3.ecfa820e.jpg" alt="Some image">
+								<div class="marquee">
+									<div class="marquee__inner" aria-hidden="true">
+										<span>BLA</span>
+										<span>BLA</span>
+										<span>BLA</span>
+										<span>BLA</span>
+									</div>
+								</div>
+							</div>
+							<div class="menu__item">
+								<a class="menu__item-link">BLA</a>
+								<img class="menu__item-img" src="/4.8ed29d64.jpg" alt="Some image">
+								<div class="marquee">
+									<div class="marquee__inner" aria-hidden="true">
+										<span>BLA BLA</span>
+										<span>BLA BLA</span>
+										<span>BLA BLA</span>
+										<span>BLA BLA</span>
+									</div>
+								</div>
+							</div>
+							<div class="menu__item">
+								<a class="menu__item-link">BLA</a>
+								<img class="menu__item-img" src="/5.7795c51e.jpg" alt="Some image">
+								<div class="marquee">
+									<div class="marquee__inner" aria-hidden="true">
+										<span>BLA</span>
+										<span>BLA</span>
+										<span>BLA</span>
+										<span>BLA</span>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</main>
+				</section>
+				<section class="tiles tiles--rotated" id="grid2">
+					<div class="tiles__wrap">
+						<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+							<div class="tiles__line-img"></div>
+							<div class="tiles__line-img"></div>
+							<div class="tiles__line-img"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=5" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/ironman.5c4a4b81.jpg)"></div>
+							<div class="tiles__line-img"></div>
+						</div>
+						<div class="tiles__line" data-scroll="" data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+							<div class="tiles__line-img"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=10" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/ironman1.be84c982.jpg)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=20" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/cap.baac3c30.jpg)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=25" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</div>
+						<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+							<div class="tiles__line-img" style="background-image:url(/ironman4.963408a0.PNG)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=30" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/cap2.a1b6d57a.jpg)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=32" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/cap5.d8b20f8c.PNG)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=43" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</div>
+						<div class="tiles__line" data-scroll="" data-scroll-speed="-1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+							<div class="tiles__line-img" style="background-image:url(/cap6.2fd9c201.PNG)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=36" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/ironman5.ef4a767e.PNG)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=40" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/cap3.04476537.jpg)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=44" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img"></div>
+						</div>
+						<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid2" data-scroll-direction="horizontal">
+							<div class="tiles__line-img"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=48" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(/cap3.04476537.jpg)"></div>
+							<video loop="" muted="" autoplay="" id="video-cards">
+								<source src="/legends.3fe2ccfa.mp4#t=52" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img"></div>
+							<div class="tiles__line-img"></div>
+						</div>
+					</div>
+				</section>
+				<!-- <section class="tiles" id="grid">
+					<div class="tiles__wrap">
+						<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid" data-scroll-direction="horizontal">
+							<div class="tiles__line-img" style="background-image:url(img/demo1/27.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/26.jpg)"></div>
+							<video loop muted autoplay id="video-cards">
+								<source src="legends.mp4#t=10" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<video loop muted autoplay id="video-cards">
+								<source src="legends.mp4#t=30" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/25.jpg)"></div>
+						</div>
+						<div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid" data-scroll-direction="horizontal">
+							<div class="tiles__line-img" style="background-image:url(img/demo1/24.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/23.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/22.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/19.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/18.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/17.jpg)"></div>
+						</div>
+						<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid" data-scroll-direction="horizontal">
+							<div class="tiles__line-img" style="background-image:url(img/demo1/16.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/15.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/14.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/13.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/12.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(img/demo1/11.jpg)"></div>
+						</div>
+					</div>
+				</section> -->
+				<section class="content content--feature">
+					<p class="content__breakout content__breakout--big" data-scroll="" data-scroll-speed="10" data-scroll-direction="horizontal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p class="content__breakout content__breakout--medium" data-scroll="" data-scroll-speed="-10" data-scroll-direction="horizontal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ad illum beatae eaque, fuga amet molestias ullam consectetur unde provident nam aliquid id.</p>
+				</section>
+				<section class="content content--numbered">
+					<p class="content__text description-family text-fancy" data-scroll="" data-scroll-speed="8">The conservation of novelty is simply that, over time, the universe has become more complicated. New levels of complexity become the foundations for yet deeper levels of complexity. And this phenomenon of the production and conservation of what I call novelty is not something which goes on only in the biological domain or only in the cultural domain or only in the domain of physics. It is a trans-categorical impulse in reality, meaning: it’s everywhere. <em>Everywhere!</em></p>
+				</section>
+				<section class="tiles tiles--columns" id="grid3">
+					<div class="tiles__wrap">
+						<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+							<div class="tiles__line-img" style="background-image:url(/20.5528d5b7.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/19.8091b01d.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/18.c5d0ab34.jpg)"></div>
+						</div>
+						<div class="tiles__line" data-scroll="" data-scroll-speed="-1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+							<div class="tiles__line-img" style="background-image:url(/16.a7efd02b.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/3.ecfa820e.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/14.fab38393.jpg)"></div>
+						</div>
+						<div class="tiles__line" data-scroll="" data-scroll-speed="1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+							<div class="tiles__line-img" style="background-image:url(/12.4061d1aa.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/11.e75a941d.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/10.e7aba2b1.jpg)"></div>
+						</div>
+						<div class="tiles__line" data-scroll="" data-scroll-speed="-1" data-scroll-target="#grid3" data-scroll-direction="vertical">
+							<div class="tiles__line-img" style="background-image:url(/8.698e0dbd.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/7.4183a781.jpg)"></div>
+							<div class="tiles__line-img" style="background-image:url(/6.ac3cd742.jpg)"></div>
+						</div>
+					</div>
+				</section>
+				<section class="content">
+					<a class="backtop" data-scroll="" data-scroll-speed="4">Back to the top</a>
+					<div class="frame frame--footer">
+						<a href="https://www.instagram.com/nihal_a_shetty/" class="frame__author">@nihal_a_shetty</a>
+						<a href="https://github.com/nihalashetty" class="frame__author">Source Code</a>
+					</div>
+				</section>
+			</main>
+		</div>
+	
+	<script>var video = document.getElementById("myVideo");
+var cursor = document.querySelector(".cursor");
+var btn = document.getElementById("vdo-control");
+var btnOver = document.getElementById("mainButton");
+window.addEventListener('mousemove', cursorAnimation);
+btnOver.addEventListener('mousemove', hideCursor);
+btnOver.addEventListener('mouseleave', showCursor);
+
+function cursorAnimation(e) {
+  cursor.style.top = e.pageY + 'px';
+  cursor.style.left = e.pageX + 'px';
+}
+
+function hideCursor(e) {
+  cursor.classList.add("hide");
+}
+
+function showCursor(e) {
+  cursor.classList.remove("hide");
+}
+
+function fadeOut() {
+  video.play();
+  TweenMax.to(".myBtn", 1, {
+    y: -100,
+    opacity: 0
+  });
+  TweenMax.to(".screen", 2, {
+    y: -400,
+    opacity: 0,
+    ease: Power2.easeInOut,
+    delay: 2
+  });
+  TweenMax.from(".overlay", 2, {
+    ease: Power2.easeInOut
+  });
+  TweenMax.to(".overlay", 2, {
+    delay: 2.6,
+    top: "-110%",
+    ease: Expo.easeInOut
+  });
+  TweenMax.to(".overlay-2", 2, {
+    delay: 3,
+    top: "-110%",
+    ease: Expo.easeInOut
+  });
+}
+
+function myFunction() {
+  console.log();
+
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}</script>
+		<script src="/js.00a46daa.js"></script>
+	</body>
+</html>
